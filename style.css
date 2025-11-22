@@ -193,47 +193,6 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: var(--spacing-lg);
-    border-radius: var(--radius);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: var(--spacing-md);
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: var(--spacing-xs);
-    font-weight: 600;
-    color: var(--color-texto);
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: var(--spacing-sm);
-    border: 2px solid var(--color-cerveza);
-    border-radius: var(--radius);
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--color-ambar);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
 
 .footer {
     background: linear-gradient(135deg, var(--color-cerveza) 0%, var(--color-cerveza-oscura) 100%);
