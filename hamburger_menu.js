@@ -6,7 +6,7 @@ menuToggle.addEventListener("click", () => {
   menuToggle.textContent = navMenu.classList.contains("active") ? "✕" : "☰";
 });
 
-// Close menu when clicking on a link
+// Cerrar el menú al hacer clic en un enlace
 document.querySelectorAll(".nav-menu a").forEach((link) => {
   link.addEventListener("click", () => {
     navMenu.classList.remove("active");
@@ -14,7 +14,7 @@ document.querySelectorAll(".nav-menu a").forEach((link) => {
   });
 });
 
-// Smooth scrolling for anchor links
+// Desplazamiento suave (smooth scrolling) para enlaces de anclaje
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -28,29 +28,29 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Form submission
+// Envío del formulario
 const contactForm = document.getElementById("contactForm");
 const successMessage = document.getElementById("successMessage");
 
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Show success message
+  // Mostrar mensaje de éxito
   successMessage.classList.add("show");
 
-  // Reset form
+  // Resetear formulario
   contactForm.reset();
 
-  // Hide success message after 5 seconds
+  // Ocultar mensaje de éxito después de 5 segundos
   setTimeout(() => {
     successMessage.classList.remove("show");
   }, 5000);
 
-  // Scroll to success message
+  // Desplazarse al mensaje de éxito
   successMessage.scrollIntoView({ behavior: "smooth" });
 });
 
-// Intersection Observer for fade-in animations
+// Intersection Observer para animaciones de aparición (fade-in)
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -65,7 +65,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Observe all cards
+// Observar todas las tarjetas
 document.querySelectorAll(".propuesta-card").forEach((card) => {
   card.style.opacity = "0";
   card.style.transform = "translateY(20px)";
@@ -73,7 +73,7 @@ document.querySelectorAll(".propuesta-card").forEach((card) => {
   observer.observe(card);
 });
 
-// Add scroll effect to header
+// Añadir efecto de desplazamiento al encabezado (header)
 let lastScroll = 0;
 const header = document.querySelector(".header");
 
@@ -89,7 +89,7 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
-// Add hover effect to CTA buttons
+// Añadir efecto hover a los botones CTA
 document.querySelectorAll(".cta-button").forEach((button) => {
   button.addEventListener("mouseenter", function () {
     this.style.backgroundColor = "#B87830";
