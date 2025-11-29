@@ -26,6 +26,7 @@ body {
     background-color: var(--color-espuma);
 }
 
+
 .header {
     background: linear-gradient(135deg, var(--color-cerveza) 0%, var(--color-cerveza-oscura) 100%);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -224,7 +225,7 @@ body {
 
 .footer-section a {
     color: var(--color-texto);
-    text-decoration: none;
+    text-decoration: underline;
     transition: color 0.3s;
 }
 
